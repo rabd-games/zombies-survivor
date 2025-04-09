@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddud0yx80o8e2"
-path="res://.godot/imported/zombies_survivor.png-e4ed696d6093ddebc9b701588101bde6.ctex"
+uid="uid://db3ux6wj2j5sa"
+path="res://.godot/imported/icon.svg-eca743179be418310e4e17c80db79d93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/zombies_survivor.png"
-dest_files=["res://.godot/imported/zombies_survivor.png-e4ed696d6093ddebc9b701588101bde6.ctex"]
+source_file="res://assets/general/images/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-eca743179be418310e4e17c80db79d93.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

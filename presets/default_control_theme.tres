@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=2 format=3 uid="uid://comktedw6st8k"]
 
-[ext_resource type="FontFile" uid="uid://2g4b4fgnvitf" path="res://assets/fonts/cute_pixel.ttf" id="1_tqokb"]
+[ext_resource type="FontFile" uid="uid://2g4b4fgnvitf" path="res://assets/general/fonts/cute_pixel.ttf" id="1_tqokb"]
 
 [resource]
 default_font = ExtResource("1_tqokb")
