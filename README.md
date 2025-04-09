@@ -1,6 +1,6 @@
 # 🩸🍓 Zombies Survivor
 
-<img alt="Zombies Survivor Enemy Image" width="300px" height="300px" src="https://videos.openai.com/vg-assets/assets%2Ftask_01jr9cdgcvegksj4ysp9hqks3f%2Fimg_1.webp?st=2025-04-07T23%3A13%3A23Z&se=2025-04-14T00%3A13%3A23Z&sks=b&skt=2025-04-07T23%3A13%3A23Z&ske=2025-04-14T00%3A13%3A23Z&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skoid=8ebb0df1-a278-4e2e-9c20-f2d373479b3a&skv=2019-02-02&sv=2018-11-09&sr=b&sp=r&spr=https%2Chttp&sig=DmXfQ%2B2ccpqu3FD9xYflCrw7qgVQ2FMGFmEz0goC%2FG8%3D&az=oaivgprodscus" />
+<img alt="Zombies Survivor Enemy Image" width="300px" height="300px" src="assets/general/images/zombies_survivor.png" />
 
 ## 💀 What is Zombies Survivor?
 
