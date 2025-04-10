@@ -1,4 +1,4 @@
-class_name Helpers
+class_name GDHelpers
 
 
 static func has_ignore_case(dict: Dictionary, key: String) -> bool:
