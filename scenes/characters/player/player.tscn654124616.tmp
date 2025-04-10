@@ -1,0 +1,27 @@
+[gd_scene load_steps=7 format=3 uid="uid://d28nfgmjgfvyy"]
+
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://scenes/characters/player/player_sprites/player_sprites.tscn" id="1_rp718"]
+[ext_resource type="Script" uid="uid://diyqiwliigj2a" path="res://scenes/characters/player/player.gd" id="1_t61fv"]
+[ext_resource type="Script" uid="uid://boviqfkbyn3ca" path="res://scripts/state_machine.gd" id="3_qd3e3"]
+[ext_resource type="Script" uid="uid://cofb5btu2u3qm" path="res://scenes/characters/player/states/idle.gd" id="4_6avc5"]
+[ext_resource type="Script" uid="uid://j45jeisy7518" path="res://scenes/characters/player/states/moving.gd" id="5_mk55u"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_yewv4"]
+radius = 64.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_t61fv")
+
+[node name="PlayerSprites" parent="." instance=ExtResource("1_rp718")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_yewv4")
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("3_qd3e3")
+states = {
+"idle": ExtResource("4_6avc5"),
+"moving": ExtResource("5_mk55u")
+}
+initial_state = "idle"
+metadata/_custom_type_script = "uid://boviqfkbyn3ca"
