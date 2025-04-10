@@ -5,14 +5,17 @@
 [node name="CanvasLayer" type="CanvasLayer"]
 follow_viewport_enabled = true
 
-[node name="Virtual Joystick" parent="." instance=ExtResource("1_2s6x4")]
-offset_top = -304.0
-offset_bottom = -4.0
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="Virtual Joystick" parent="HBoxContainer" instance=ExtResource("1_2s6x4")]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
 deadzone_size = 8.0
 clampzone_size = 48.0
 joystick_mode = 1
-visibility_mode = 2
-action_left = "move_left"
-action_right = "move_right"
-action_up = "move_up"
-action_down = "move_down"
