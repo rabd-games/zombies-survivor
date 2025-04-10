@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="zombies-survivor"
-run/main_scene="uid://dhn5ujeau70tn"
+run/main_scene="uid://ka3e7sko5k36"
 config/features=PackedStringArray("4.4", "Mobile")
 boot_splash/image="uid://ddud0yx80o8e2"
 config/icon="uid://ddud0yx80o8e2"
@@ -22,7 +22,11 @@ project/assembly_name="zombies-survivor"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/simple_gdscript_formatter/plugin.cfg")
+enabled=PackedStringArray("res://addons/simple_gdscript_formatter/plugin.cfg", "res://addons/virtual_joystick/plugin.cfg")
+
+[gui]
+
+theme/custom_font="uid://2g4b4fgnvitf"
 
 [input]
 
@@ -58,6 +62,10 @@ move_right={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":14,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
 
 [rendering]
 
