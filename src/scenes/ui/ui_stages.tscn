@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://djxdgcg88ud4j"]
+
+[ext_resource type="PackedScene" uid="uid://dmr0fcamx7t56" path="res://addons/virtual_joystick/virtual_joystick_scene.tscn" id="1_2s6x4"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+follow_viewport_enabled = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+
+[node name="Virtual Joystick" parent="HBoxContainer" instance=ExtResource("1_2s6x4")]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+deadzone_size = 8.0
+clampzone_size = 48.0
+joystick_mode = 1
