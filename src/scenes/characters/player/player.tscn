@@ -9,7 +9,7 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_yewv4"]
 radius = 64.0
 
-[node name="CharacterBody2D" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
 script = ExtResource("1_t61fv")
 
 [node name="PlayerSprites" parent="." instance=ExtResource("1_rp718")]
@@ -25,3 +25,90 @@ states = {
 }
 initial_state = "idle"
 metadata/_custom_type_script = "uid://boviqfkbyn3ca"
+
+[node name="Control" type="Control" parent="." groups=["Player"]]
+top_level = true
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Level_up_panel" type="Panel" parent="Control"]
+process_mode = 2
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -107.5
+offset_right = 100.0
+offset_bottom = 107.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Option_container" type="BoxContainer" parent="Control/Level_up_panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -106.5
+offset_right = 100.0
+offset_bottom = 108.5
+grow_horizontal = 2
+grow_vertical = 2
+vertical = true
+
+[node name="Label" type="Label" parent="Control/Level_up_panel/Option_container"]
+layout_mode = 2
+text = "LEVEL UP!"
+horizontal_alignment = 1
+
+[node name="Area" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -268.0
+offset_top = -492.0
+offset_right = -209.0
+offset_bottom = -457.0
+text = "Texto: 100
+"
+
+[node name="EP" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -268.0
+offset_top = -457.0
+offset_right = -209.0
+offset_bottom = -422.0
+text = "Texto: 100
+"
+
+[node name="Attack" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -268.0
+offset_top = -475.0
+offset_right = -209.0
+offset_bottom = -440.0
+text = "Texto: 100
+"
+
+[node name="Luck" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = -269.0
+offset_top = -440.0
+offset_right = -210.0
+offset_bottom = -405.0
+text = "Texto: 100
+"
